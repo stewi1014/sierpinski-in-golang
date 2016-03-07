@@ -61,7 +61,6 @@ func main() {
 	gl.Translated(POSX, POSY, 0)
 	gl.Scaled(SCALE, SCALE, 0)
 	drawTriangle(11)
-	//triangleBase()
 	gl.PopMatrix()
 	window.SwapBuffers()
 
@@ -81,7 +80,7 @@ func triangleBase() {
 
 func drawTriangle(x int) {
 	if x == 0 {
-		triangleBase()
+		triangleBase() //We've hit our recursion limit. Draw a triangle and bail.
 		return
 	}
 	gl.PushMatrix()
