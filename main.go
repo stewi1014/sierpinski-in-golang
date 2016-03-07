@@ -16,7 +16,7 @@ var POSY float64 = 1080
 var h = -math.Sqrt(3) / 2
 
 func init() {
-	runtime.LockOSThread()
+	runtime.LockOSThread() //OpenGL throws a hissy fit if we're not on the OS Thread.
 }
 
 func main() {
