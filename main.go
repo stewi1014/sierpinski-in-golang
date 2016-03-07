@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"runtime"
-
 	"math"
 
 	"github.com/go-gl/gl/v2.1/gl"
